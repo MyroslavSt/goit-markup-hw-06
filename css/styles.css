@@ -832,8 +832,8 @@ body {
     padding: 0;
     display: block;
     outline: none;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -936,4 +936,11 @@ body {
     width: 10px;
     height: 8px;
     fill: #F4F4FD;
+}
+
+.policy-style {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #757575;
 }
