@@ -557,7 +557,11 @@ body {
     letter-spacing: 0.04em;
     width: 165px;
     height: 40px;
-    display: block;
+    /* display: block; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-left: 24px;
     margin-top: 40px;
     /* justify-content: center;
@@ -584,6 +588,7 @@ body {
     width: 24px;
     height: 20px;
     margin-left: 16px;
+
 }
 
 .footer-btn-submit:hover,
