@@ -510,12 +510,11 @@ body {
 }
 
 .footer-form-subskribe {
-    display: flex;
     margin-left: 80px;
 }
 
 .footer-form-field {
-    /* margin-bottom: 16px; */
+    display: flex;
 }
 
 .footer-form-desc {
@@ -528,10 +527,6 @@ body {
 }
 
 .footer-form-input {
-    /* position: absolute; */
-    /* top: 50%;
-    left: 19px;
-    transform: translate(0, -50%); */
     padding-left: 16px;
     display: block;
     color: #FFFFFF;
@@ -545,6 +540,14 @@ body {
     transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-form-input::placeholder {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+
 .footer-form-input:focus {
     border-color: var(--brand-main-btn-hover);
 }
@@ -557,15 +560,13 @@ body {
     letter-spacing: 0.04em;
     width: 165px;
     height: 40px;
-    /* display: block; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-left: 24px;
-    margin-top: 40px;
-    /* justify-content: center;
-    align-items: center; */
+    padding: 0;
+
     color: var(--brand-main-btn);
     background: var(--brand-main-btn-back);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -578,17 +579,17 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .svg-subscribe-icon {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-} */
+.svg-subscribe-icon {
+    width: 24px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+}
 
 .btn-subscribe-icon {
     width: 24px;
     height: 20px;
-    margin-left: 16px;
-
 }
 
 .footer-btn-submit:hover,
@@ -818,12 +819,6 @@ body {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-icon:focus,
-.modal-form-input:focus {
-    border-color: var(--brand-main-btn-back);
-    fill: var(--brand-main-btn-back);
-}
-
 .modal-form-icon {
     position: absolute;
     top: 50%;
@@ -831,10 +826,16 @@ body {
     transform: translate(0, -50%);
     padding: 0;
     display: block;
-    outline: none;
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 24px;
+    fill: #2E2F42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-icon:focus,
+.modal-form-input:focus {
+    border-color: var(--brand-main-btn-back);
+    fill: var(--brand-main-btn-back);
 }
 
 .modal-form-desc {
@@ -861,18 +862,26 @@ body {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-form-message::placeholder {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-message:focus {
+    outline: none;
+    border-color: var(--brand-main-btn-back);
+}
+
 .modal-form-check-desc {
     display: flex;
     align-items: center;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.04em;
+    color: #757575;
     margin-bottom: 24px;
-}
-
-.modal-form-message:focus {
-    outline: none;
-    border-color: var(--brand-main-btn-back);
 }
 
 .modal-form-check-desc::before {
@@ -883,22 +892,39 @@ body {
     border-radius: 2px;
     cursor: pointer;
     content: "";
+    /* background-color: none; */
     margin-right: 8px;
 }
 
 .modal-form-check::checked+.modal-form-check-desc::before {
-    background: #404BBF;
+    background-color: #404BBF;
 }
 
 .modal-form-check:focus+.modal-form-check-desc::before {
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-image: url(./images/choice.svg);
 }
 
-.hidden-check {
+/* .hidden-check {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+} */
+
+.modal-form-fake-desc {
+    position: absolute;
+    width: 16px;
+    height: 16px;
 }
+
+.modal-form-fake-icon {
+    width: 100%;
+    height: 100%;
+    fill: #F4F4FD;
+}
+
+
+/* .modal-form-fake-icon:focus+.modal-form-check-desc::before  */
 
 .modal-form-submit {
     font-family: inherit;
@@ -927,20 +953,9 @@ body {
     background: var(--brand-main-btn-hover);
 }
 
-/* .modal-form-fake-desc {
-    width: 10px;
-    height: 8px;
-} */
-
-.modal-form-fake-icon {
-    width: 10px;
-    height: 8px;
-    fill: #F4F4FD;
-}
-
 .policy-style {
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.04em;
-    color: #757575;
+    color: #4D5AE5;
 }
