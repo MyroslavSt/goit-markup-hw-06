@@ -599,14 +599,12 @@
                 pattern="^[a-zA-Zа-яА-Я]"
                 minlength="2"
               />
-              <span>
-                <svg class="modal-form-icon">
-                  <use href="./images/icon.svg#icon-person"></use>
-                </svg>
-              </span>
+
+              <svg class="modal-form-icon">
+                <use href="./images/icon.svg#icon-person"></use>
+              </svg>
             </span>
           </label>
-
           <label for="" class="modal-form-field">
             <span class="modal-form-desc">Phone</span>
             <span class="modal-form-wrapper">
@@ -618,11 +616,9 @@
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 title="xxx-xxx-xx-xx"
               />
-              <span>
-                <svg class="modal-form-icon">
-                  <use href="./images/icon.svg#icon-phone"></use>
-                </svg>
-              </span>
+              <svg class="modal-form-icon">
+                <use href="./images/icon.svg#icon-phone"></use>
+              </svg>
             </span>
           </label>
           <label for="" class="modal-form-field">
@@ -634,14 +630,12 @@
                 class="modal-form-input"
                 required
               />
-              <span>
-                <svg class="modal-form-icon">
-                  <use href="./images/icon.svg#icon-email"></use>
-                </svg>
-              </span>
+              <svg class="modal-form-icon">
+                <use href="./images/icon.svg#icon-email"></use>
+              </svg>
             </span>
           </label>
-          <label for="" class="modal-form-field">
+          <label for="">
             <span class="modal-form-desc">Comment</span>
             <textarea
               name="user_message"
@@ -652,17 +646,18 @@
             ></textarea>
           </label>
           <input
-            id="user_policy"
+            class="modal-form-check hidden-check"
             type="checkbox"
             name="user_policy"
-            class="modal-form-check hidden-check"
+            id="user_policy"
           />
+
           <label for="user_policy" class="modal-form-check-desc">
-            <span class="modal-form-fake-desc">
+            <!-- <span class="modal-form-fake-desc">
               <svg class="modal-form-fake-icon">
-                <use href="./images/choice.svg"></use>
+                <use href="./images/click.svg"></use>
               </svg>
-            </span>
+            </span> -->
             I accept the terms and conditions of the&nbsp;
             <a href="" class="policy-style"> Privacy Policy</a></label
           >
