@@ -31,7 +31,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /* outline: 2px solid red; */
 }
 
 .header {
@@ -287,8 +286,7 @@ body {
     padding-bottom: 120px;
 }
 
-/* 
-.img-list {
+/* .img-list {
     justify-content: center;
     gap: 24px;
 } */
@@ -316,11 +314,13 @@ body {
     background: var(--brand-team-color);
 }
 
-/* .team-list {
+.team-list {
     justify-content: center;
-    gap: 24px;
-} */
+}
 
+.team-styles {
+    margin-bottom: 72px;
+}
 
 .team-wrap {
     padding-top: 32px;
